@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		F78A00712BADCA7500EF1ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A00702BADCA7500EF1ABC /* AppDelegate.swift */; };
 		F78A00732BADCA7500EF1ABC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A00722BADCA7500EF1ABC /* SceneDelegate.swift */; };
-		F78A00752BADCA7500EF1ABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A00742BADCA7500EF1ABC /* ViewController.swift */; };
+		F78A00752BADCA7500EF1ABC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A00742BADCA7500EF1ABC /* LoginView.swift */; };
 		F78A00782BADCA7500EF1ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78A00762BADCA7500EF1ABC /* Main.storyboard */; };
 		F78A007A2BADCA7900EF1ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78A00792BADCA7900EF1ABC /* Assets.xcassets */; };
 		F78A007D2BADCA7900EF1ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78A007B2BADCA7900EF1ABC /* LaunchScreen.storyboard */; };
+		F78A00862BADCBA100EF1ABC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A00852BADCBA100EF1ABC /* LoginViewModel.swift */; };
+		F78A00892BADCC1800EF1ABC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A00882BADCC1800EF1ABC /* APIClient.swift */; };
+		F78A008B2BADCD2400EF1ABC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A008A2BADCD2400EF1ABC /* User.swift */; };
+		F78A008E2BADDFBF00EF1ABC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A008D2BADDFBF00EF1ABC /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F78A006D2BADCA7500EF1ABC /* ArchitectureMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitectureMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78A00702BADCA7500EF1ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78A00722BADCA7500EF1ABC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F78A00742BADCA7500EF1ABC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F78A00742BADCA7500EF1ABC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F78A00772BADCA7500EF1ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F78A00792BADCA7900EF1ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F78A007C2BADCA7900EF1ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F78A007E2BADCA7900EF1ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F78A00852BADCBA100EF1ABC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F78A00882BADCC1800EF1ABC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F78A008A2BADCD2400EF1ABC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F78A008D2BADDFBF00EF1ABC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		F78A006F2BADCA7500EF1ABC /* ArchitectureMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				F78A008C2BADDFB500EF1ABC /* Home */,
+				F78A00872BADCBAF00EF1ABC /* Model */,
+				F78A00842BADCB9600EF1ABC /* Login */,
 				F78A00702BADCA7500EF1ABC /* AppDelegate.swift */,
 				F78A00722BADCA7500EF1ABC /* SceneDelegate.swift */,
-				F78A00742BADCA7500EF1ABC /* ViewController.swift */,
 				F78A00762BADCA7500EF1ABC /* Main.storyboard */,
 				F78A00792BADCA7900EF1ABC /* Assets.xcassets */,
 				F78A007B2BADCA7900EF1ABC /* LaunchScreen.storyboard */,
 				F78A007E2BADCA7900EF1ABC /* Info.plist */,
 			);
 			path = ArchitectureMVVM;
+			sourceTree = "<group>";
+		};
+		F78A00842BADCB9600EF1ABC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F78A00852BADCBA100EF1ABC /* LoginViewModel.swift */,
+				F78A00742BADCA7500EF1ABC /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F78A00872BADCBAF00EF1ABC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F78A00882BADCC1800EF1ABC /* APIClient.swift */,
+				F78A008A2BADCD2400EF1ABC /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F78A008C2BADDFB500EF1ABC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F78A008D2BADDFBF00EF1ABC /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F78A00752BADCA7500EF1ABC /* ViewController.swift in Sources */,
+				F78A00862BADCBA100EF1ABC /* LoginViewModel.swift in Sources */,
+				F78A008E2BADDFBF00EF1ABC /* HomeView.swift in Sources */,
+				F78A00752BADCA7500EF1ABC /* LoginView.swift in Sources */,
+				F78A008B2BADCD2400EF1ABC /* User.swift in Sources */,
 				F78A00712BADCA7500EF1ABC /* AppDelegate.swift in Sources */,
+				F78A00892BADCC1800EF1ABC /* APIClient.swift in Sources */,
 				F78A00732BADCA7500EF1ABC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
